@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+#family_pic{
+    width: 300px;
+}
+button{
+    font-size: 25px;
+    background-color: bisque;
+    color: blueviolet;
+}
+h1{
+    font-size: 25px;
+    background-color: cyan;
+    text-decoration: underline;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
