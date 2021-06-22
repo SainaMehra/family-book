@@ -1,0 +1,41 @@
+<html> 
+    <head>
+        <link rel= "stylesheet" href="style.css">
+    </head>
+    <title> Family Book </title>
+    <body>
+        <h1> Family Book </h1>
+        <hr> 
+        <img id="family_pic" src="IMG-0345.jpg">
+        <h3 id="Family"> Family Book </h3>
+        <button type="button" onclick="update()"> Next </button>
+        <hr>
+        <script>
+            var names=[
+                "My Dad (Shivam Mehra)", 
+                "My mom (Sakshi Mehra)",
+                "My Sister (Suhani Mehra)",
+                "Me (Saina Mehra)"
+            ];
+            var pictures=[
+                "pic.dad.jpg",
+                "IMG_3392.jpeg",
+                "IMG-8487.jpg",
+                "IMG_3393.jpeg"
+            ];
+            var i=0;
+            function update()
+            {
+                if (i<names.length)
+                {
+                    document.getElementById("family_pic").src=pictures[i];
+                    document.getElementById("Family").innerHTML=names[i];
+                    i++
+                }
+                else {
+                    i=0;
+                }
+            }
+        </script>
+    </body>
+    </html>
